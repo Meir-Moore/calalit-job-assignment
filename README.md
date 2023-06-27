@@ -37,5 +37,6 @@ To run this project, ensure that you have the following prerequisites installed:
 
 7. ```shell
    terraform apply
+7. ```shell
+   terraform destroy
 
-   
