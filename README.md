@@ -15,9 +15,9 @@ To run this project, ensure that you have the following prerequisites installed:
 
 ## Getting Started
 
-1. Clone this repository to your local machine:
+ Clone this repository to your local machine:
 
-   ```shell
+1.   ```shell
    git clone https://github.com/your-username/terraform-azure-function-app.git
 
 2. ```shell
