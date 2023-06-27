@@ -9,7 +9,7 @@ This project demonstrates the deployment of an Azure Function App using Terrafor
 
 To run this project, ensure that you have the following prerequisites installed:
 
-- Terraform (version 1.0.0 or later)
+- Terraform (version 3.0.0 or later)
 - Azure CLI
 - Azure subscription and credentials
 
