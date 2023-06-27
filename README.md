@@ -18,25 +18,17 @@ To run this project, ensure that you have the following prerequisites installed:
  Clone this repository to your local machine:
 
 1. ```shell
-   git clone https://github.com/your-username/terraform-azure-function-app.git
-
+     cd terraform-azure-function-app
 2. ```shell
-   cd terraform-azure-function-app
-
-3. ```shell
      terraform init
-   
+3. ```shell
+     az login
 4. ```shell
-   az login
-
+     az account set --subscription <subscription_id>
 5. ```shell
-   az account set --subscription <subscription_id>
-
+     terraform plan
 6. ```shell
-   terraform plan
-
+     terraform apply
 7. ```shell
-   terraform apply
-7. ```shell
-   terraform destroy
+     terraform destroy
 
