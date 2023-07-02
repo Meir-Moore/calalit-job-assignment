@@ -14,7 +14,7 @@ To run this project, ensure that you have the following prerequisites installed:
 - Azure subscription and credentials
 - Save your state file in azure
 
-# Configure names for your resources 
+# Configure names for your resources using PowerShell 
  1. ```shell
     $RESOURCE_GROUP_NAME='tfstate'
     $STORAGE_ACCOUNT_NAME="tfstate$(Get-Random)"
