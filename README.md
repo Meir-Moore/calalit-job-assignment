@@ -12,19 +12,26 @@ To run this project, ensure that you have the following prerequisites installed:
 - Terraform (version 3.0.0 or later)
 - Azure CLI
 - Azure subscription and credentials
-- Create a resource group and storage account for saving the terraform state file in azue:
-$RESOURCE_GROUP_NAME='tfstate'
-$STORAGE_ACCOUNT_NAME="tfstate$(Get-Random)"
-$CONTAINER_NAME='tfstate'
+- Save your state file in azure
 
+# Configure names for your resources 
+ 1. ```shell
+    $RESOURCE_GROUP_NAME='tfstate'
+    $STORAGE_ACCOUNT_NAME="tfstate$(Get-Random)"
+    $CONTAINER_NAME='tfstate'
+  
 # Create resource group
-New-AzResourceGroup -Name $RESOURCE_GROUP_NAME -Location eastus
+2. ```shell
+   New-AzResourceGroup -Name $RESOURCE_GROUP_NAME -Location eastus
 
 # Create storage account
-$storageAccount = New-AzStorageAccount -ResourceGroupName $RESOURCE_GROUP_NAME -Name $STORAGE_ACCOUNT_NAME -SkuName Standard_LRS -Location eastus -AllowBlobPublicAccess $false
+3. ```shell
+   $storageAccount = New-AzStorageAccount -ResourceGroupName $RESOURCE_GROUP_NAME -Name $STORAGE_ACCOUNT_NAME -SkuName Standard_LRS -Location eastus -   
+   AllowBlobPublicAccess $false
 
 # Create blob container
-New-AzStorageContainer -Name $CONTAINER_NAME -Context $storageAccount.context****
+4. ```shell
+   New-AzStorageContainer -Name $CONTAINER_NAME -Context $storageAccount.context****
 
 ## Getting Started
 
