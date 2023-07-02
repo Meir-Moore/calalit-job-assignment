@@ -33,6 +33,12 @@ To run this project, ensure that you have the following prerequisites installed:
 4. ```shell
    New-AzStorageContainer -Name $CONTAINER_NAME -Context $storageAccount.context****
 
+# Configure terraform backend state
+5. ```shell
+   $ACCOUNT_KEY=(Get-AzStorageAccountKey -ResourceGroupName $RESOURCE_GROUP_NAME -Name $STORAGE_ACCOUNT_NAME)[0].value
+   $env:ARM_ACCESS_KEY=$ACCOUNT_KEY
+
+
 ## Getting Started
 
  Clone this repository to your local machine:
