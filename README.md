@@ -12,7 +12,7 @@ To run this project, ensure that you have the following prerequisites installed:
 - Terraform (version 3.0.0 or later)
 - Azure CLI
 - Azure subscription and credentials
-- Save your state file in azure
+- Save terraform state file in azure
 
 # Configure names for your resources using PowerShell 
  1. ```shell
