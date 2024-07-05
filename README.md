@@ -31,7 +31,7 @@ To run this project, ensure that you have the following prerequisites installed:
 
 # Create blob container
 4. ```shell
-   New-AzStorageContainer -Name $CONTAINER_NAME -Context $storageAccount.context****
+   New-AzStorageContainer -Name $CONTAINER_NAME -Context $storageAccount.context
 
 # Configure terraform backend state
 5. ```shell
